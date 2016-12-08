@@ -19,6 +19,6 @@ module.exports = {
             path: 'manifest.json',
             name: '[name]',
             context: __dirname,
-        }),
-    ],
+        })
+    ]
 };

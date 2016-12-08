@@ -24,10 +24,7 @@ It will start a local server using `webpack-dev-server` which will watch, build 
 ##Directory Structure
 
 ```bash
-├── abc.json  ------------------------- 项目构建配置文件
 ├── favicon.ico  ---------------------- 页面图标
-├── html  ----------------------------- html目录
-│   └── index.html  ------------------- 入口页面
 ├── package.json  --------------------- 项目配置
 ├── README.md  ------------------------ 说明文件
 └── src  ------------------------------ 源码目录
