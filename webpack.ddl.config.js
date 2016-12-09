@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 var vendors = [
     'angular',
-    'babel-polyfill'
+    // 'babel-polyfill'
 ];
 
 module.exports = {

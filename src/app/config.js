@@ -5,7 +5,7 @@ CONFIG.API = {};
 
 // 是否使用MOCK数据
 CONFIG.API.USEMOCK = false;
-CONFIG.API.SERVER_ADDRESS = 'http://127.0.0.1:8080';
+CONFIG.API.SERVER_ADDRESS = 'https://sd.189.cn/flowSell/';
 CONFIG.API.REQUEST_HEADER = {
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
 };
