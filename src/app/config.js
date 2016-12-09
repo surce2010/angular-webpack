@@ -5,6 +5,10 @@ CONFIG.API = {};
 
 // 是否使用MOCK数据
 CONFIG.API.USEMOCK = false;
+CONFIG.API.SERVER_ADDRESS = 'http://127.0.0.1:8080';
+CONFIG.API.REQUEST_HEADER = {
+    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+};
 
 /**
  * 版本格式: 主版本号.次版本号.修订号
