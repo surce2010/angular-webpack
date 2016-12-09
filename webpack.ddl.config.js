@@ -2,7 +2,8 @@ var path = require('path');
 var webpack = require('webpack');
 
 var vendors = [
-    'angular'
+    'angular',
+    'babel-polyfill'
 ];
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
         lib: vendors,
     },
     output: {
-        path: path.join(__dirname, 'src/js'),
+        path: path.join(__dirname, '/src/js'),
         filename: '[name].js',
         library: '[name]',
     },
@@ -19,6 +20,7 @@ module.exports = {
             path: 'manifest.json',
             name: '[name]',
             context: __dirname,
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ]
 };

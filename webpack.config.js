@@ -149,6 +149,11 @@ module.exports = function makeWebpackConfig() {
             manifest: require('./manifest.json'),
         }),
 
+        new webpack.ProvidePlugin({
+            'angular': 'angular',
+            'window.angular': 'angular'
+        }),
+
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: './index.html',
@@ -201,7 +206,7 @@ module.exports = function makeWebpackConfig() {
      * Reference: http://webpack.github.io/docs/webpack-dev-server.html
      */
     config.devServer = {
-        contentBase: './dist',
+        contentBase: './src',
         stats: 'minimal'
     };
 
