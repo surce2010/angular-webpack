@@ -9,6 +9,6 @@ module.exports = function(ngModule) {
             replace: true,
             transclude: true,
             template: require('./layout.html')
-        }
+        };
     }
-}
+};

@@ -2,6 +2,9 @@
   "name": "lib",
   "content": {
     "./node_modules/angular/index.js": 1,
-    "./node_modules/angular/angular.js": 2
+    "./node_modules/angular/angular.js": 2,
+    "./node_modules/lodash/lodash.js": 3,
+    "./node_modules/webpack/buildin/module.js": 4,
+    "./node_modules/mockjs/dist/mock.js": 5
   }
 }

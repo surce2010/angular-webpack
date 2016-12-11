@@ -78,7 +78,11 @@ module.exports = function makeWebpackConfig() {
 
     // Initialize module
     config.module = {
-        preLoaders: [],
+        perLoaders: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'eslint-loader'
+        }],
         loaders: [{
             // JS LOADER
             // Reference: https://github.com/babel/babel-loader
@@ -151,7 +155,9 @@ module.exports = function makeWebpackConfig() {
 
         new webpack.ProvidePlugin({
             'angular': 'angular',
-            'window.angular': 'angular'
+            'window.angular': 'angular',
+            '_': 'lodash',
+            'Mock': 'mockjs'
         }),
 
         new HtmlWebpackPlugin({
@@ -208,6 +214,10 @@ module.exports = function makeWebpackConfig() {
     config.devServer = {
         contentBase: './src',
         stats: 'minimal'
+    };
+
+    config.eslint = {
+        configFile: './.eslintrc'
     };
 
     return config;

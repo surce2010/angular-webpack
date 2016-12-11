@@ -4,7 +4,7 @@ import Mock from 'mockjs';
 module.exports = function(ngModule) {
     ngModule.factory('httpMethod', ['$http', '$q', function($http, $q) {
         let httpMethod = {};
-        // 查询权限类型信息
+
         httpMethod.querySupplierByCond = function(param) {
             let defer = $q.defer();
             $http({

@@ -3,6 +3,8 @@ var webpack = require('webpack');
 
 var vendors = [
     'angular',
+    'lodash',
+    'mockjs',
     // 'babel-polyfill'
 ];
 
