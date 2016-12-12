@@ -16,6 +16,6 @@ CONFIG.API.REQUEST_HEADER = {
  * 原基础上增加了部分功能,主版本号不变,子版本号+1,修订号复位0;
  * 局部修改或者BUG修正,主版本号\次版本号不变,修订号+1;
  */
-CONFIG.SCHEMA_VERSION = "1.0.0";
+CONFIG.SCHEMA_VERSION = '1.0.0';
 
 module.exports = CONFIG;

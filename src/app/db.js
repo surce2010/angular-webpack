@@ -18,7 +18,7 @@ module.exports = function(ngModule) {
                 }
                 defer.resolve(data);
             }, function(data, status, headers, config) {
-                defer.reject(data);
+                defer.reject(data, status, headers, config);
             });
             return defer.promise;
         };
@@ -26,12 +26,12 @@ module.exports = function(ngModule) {
         if (CONFIG.API.USEMOCK) {
             Mock.mock(CONFIG.API.SERVER_ADDRESS + 'flow-backend/cust/queryCurrencyRule', {
                 'rsphead': 's',
-                'success': true, //是否成功
+                'success': true, // 是否成功
                 'code': null,
-                'msg': null, //失败信息
+                'msg': null, // 失败信息
                 'data|2': [{
-                    'operatorId|+1': ['1', '2'], //运营商ID
-                    'name|+1': ['通讯运营商', '油运营商'], //运营商名称
+                    'operatorId|+1': ['1', '2'], // 运营商ID
+                    'name|+1': ['通讯运营商', '油运营商'] // 运营商名称
                 }],
                 'errors': null
             });
@@ -39,4 +39,4 @@ module.exports = function(ngModule) {
 
         return httpMethod;
     }])
-}
+};

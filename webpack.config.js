@@ -1,6 +1,5 @@
 'use strict';
 
-// Modules
 var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
@@ -150,7 +149,7 @@ module.exports = function makeWebpackConfig() {
     config.plugins.push(
         new webpack.DllReferencePlugin({
             context: __dirname,
-            manifest: require('./manifest.json'),
+            manifest: require('./manifest.json')
         }),
 
         new webpack.ProvidePlugin({

@@ -1,53 +1,54 @@
 {
-  "name": "angular-webpack-workflow",
-  "version": "1.0.0",
-  "description": "A workflow for Angular made with Webpack",
-  "scripts": {
-    "lib": "webpack --config webpack.ddl.config.js",
-    "build": "rimraf dist && webpack --bail --progress --profile",
-    "server": "webpack-dev-server --history-api-fallback --inline --progress",
-    "start": "npm run server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Foxandxss/angular-webpack-workflow.git"
-  },
-  "author": "Jesus Rodriguez",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Foxandxss/angular-webpack-workflow/issues"
-  },
-  "homepage": "https://github.com/Foxandxss/angular-webpack-workflow",
-  "dependencies": {
-    "angular": "^1.5.8",
-    "babel-polyfill": "^6.16.0"
-  },
-  "devDependencies": {
-    "angular-ui-bootstrap": "^2.3.0",
-    "autoprefixer": "^6.0.3",
-    "babel-core": "^6.2.1",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "copy-webpack-plugin": "^3.0.1",
-    "css-loader": "^0.23.0",
-    "eslint": "^3.12.0",
-    "eslint-loader": "^1.6.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
-    "html-webpack-plugin": "^2.7.1",
-    "less": "^2.6.1",
-    "less-loader": "^2.2.3",
-    "lodash": "^4.17.2",
-    "mockjs": "^1.0.1-beta3",
-    "node-libs-browser": "^1.0.0",
-    "null-loader": "^0.1.1",
-    "phantomjs-prebuilt": "^2.1.4",
-    "postcss-loader": "^0.9.1",
-    "raw-loader": "^0.5.1",
-    "rimraf": "^2.5.1",
-    "style-loader": "^0.13.0",
-    "webpack": "^1.12.13",
-    "webpack-dev-server": "^1.14.1"
-  }
+    "name": "angular-webpack-workflow",
+    "version": "1.0.0",
+    "description": "A workflow for Angular made with Webpack",
+    "scripts": {
+        "lint": "eslint --ignore-path .eslintignore --output-file ./lintReport.html ./",
+        "lib": "webpack --config webpack.ddl.config.js",
+        "build": "rimraf dist && webpack --bail --progress --profile",
+        "server": "webpack-dev-server --history-api-fallback --inline --progress",
+        "start": "npm run server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Foxandxss/angular-webpack-workflow.git"
+    },
+    "author": "Jesus Rodriguez",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Foxandxss/angular-webpack-workflow/issues"
+    },
+    "homepage": "https://github.com/Foxandxss/angular-webpack-workflow",
+    "dependencies": {
+        "angular": "^1.5.8",
+        "babel-polyfill": "^6.16.0"
+    },
+    "devDependencies": {
+        "angular-ui-bootstrap": "^2.3.0",
+        "autoprefixer": "^6.0.3",
+        "babel-core": "^6.2.1",
+        "babel-eslint": "^7.1.1",
+        "babel-loader": "^6.2.0",
+        "babel-preset-es2015": "^6.1.18",
+        "copy-webpack-plugin": "^3.0.1",
+        "css-loader": "^0.23.0",
+        "eslint": "^3.12.0",
+        "eslint-loader": "^1.6.1",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "file-loader": "^0.9.0",
+        "html-webpack-plugin": "^2.7.1",
+        "less": "^2.6.1",
+        "less-loader": "^2.2.3",
+        "lodash": "^4.17.2",
+        "mockjs": "^1.0.1-beta3",
+        "node-libs-browser": "^1.0.0",
+        "null-loader": "^0.1.1",
+        "phantomjs-prebuilt": "^2.1.4",
+        "postcss-loader": "^0.9.1",
+        "raw-loader": "^0.5.1",
+        "rimraf": "^2.5.1",
+        "style-loader": "^0.13.0",
+        "webpack": "^1.12.13",
+        "webpack-dev-server": "^1.14.1"
+    }
 }
