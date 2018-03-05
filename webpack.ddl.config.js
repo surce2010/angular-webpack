@@ -1,7 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
+let path = require('path');
+let webpack = require('webpack');
 
-var vendors = [
+let vendors = [
     'angular',
     'lodash',
     'mockjs',
